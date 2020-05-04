@@ -1,0 +1,26 @@
+.nombre-clase {
+    color: blue;
+    /*    width: 100px;
+    height: 100px;*/
+}
+.cuadrado {
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+}
+.class1.class2 {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
+.class1 .class3 {
+    background-color: black;
+    width: 100px;
+    height: 100px;
+}
+.class1 {
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+}
+/* Est
