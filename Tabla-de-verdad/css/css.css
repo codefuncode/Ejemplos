@@ -1,0 +1,16 @@
+div {
+    margin-top: 10px;
+}
+[type='text'] {
+    height: 50px;
+    width: 310px
+}
+[type='button'] {
+    width: 75px;
+    height: 75px;
+}
+.esigual input {
+    margin-top: 20px;
+    width: 310px;
+    height: 50px;
+}
