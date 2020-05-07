@@ -36,10 +36,16 @@
           <input type="button" value="~r"/>
           <input type="button" value="~s"/>
         </div>
+        <div class="borraRerocede">
+          <input type="button" value="AC"/>
+          <input type="button" value="DEL"/>
+        </div>
         <div class="esigual">
           <input type="button" value="="/>
         </div>
       </div>
     </div>
+    <script src="js/js.js" type="text/javascript">
+    </script>
   </body>
 </html>
