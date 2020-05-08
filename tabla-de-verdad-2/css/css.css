@@ -1,0 +1,23 @@
+div {
+    margin-top: 10px;
+}
+[type='text'] {
+    height: 50px;
+    width: 310px
+}
+[type='button'] {
+    width: 75px;
+    height: 75px;
+}
+.esigual input {
+    margin-top: 10px;
+    width: 310px;
+    height: 50px;
+}
+.borraRerocede input {
+    width: 150px;
+    height: 50px;
+}
+.borraRerocede {
+    margin-top: 30px;
+}
