@@ -5,14 +5,17 @@
       W3.CSS
     </title>
     <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <!-- Mita la diferencia al incorporar hojas de estilos el tipo de ruta que se utiliza  -->
+    <!--  Esta es una ruta externa, POr que lo que contiene no esta ubicado dentro del proyecto que se ejecuta  -->
     <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet"/>
+    <!-- Esta es una ruta local  donde para ejecutarse tiene que existir el fichero físicamente  para poder ejecutarse  -->
     <!-- <link href="css/w3.css" rel="stylesheet"/> -->
   </head>
   <body>
     <div class="w3-container" style="padding: 50px !important;">
       <div class="w3-container w3-teal">
         <h1>
-          Galeria de imagenes
+          Rutas de ficheros ejemplos con imágenes y CSS.
         </h1>
       </div>
       <div class="w3-row-padding w3-margin-top">
@@ -38,10 +41,11 @@
         </div>
         <div class="w3-third">
           <div class="w3-card">
-            <img src="img/lampstack.jpeg" style="width:100%; height: 300px;"/>
+            <!--  Aquí coloco  una ruta a un fichero que no existe en este servidor  -->
+            <img src="img/noexista.jpeg" style="width:100%; height: 300px;"/>
             <div class="w3-container">
               <h5>
-                Url local
+                Url local no existe en ele servidor
               </h5>
             </div>
           </div>
