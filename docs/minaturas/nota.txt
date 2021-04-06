@@ -1,0 +1,103 @@
+
+
+HTMLImageElement
+https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement
+
+FormData
+https://developer.mozilla.org/en-US/docs/Web/API/FormData
+
+Canvas API
+https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API
+
+HTMLInputElement
+https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement
+
+FileList
+https://developer.mozilla.org/en-US/docs/Web/API/FileList
+
+File
+https://developer.mozilla.org/en-US/docs/Web/API/File
+
+<input type="file">
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file
+
+URL
+https://developer.mozilla.org/en-US/docs/Web/API/URL
+
+Using files from web applications
+https://developer.mozilla.org/en-US/docs/Web/API/File/Using_files_from_web_applications
+
+l1 - l12 	Responsive sizes for large screens
+m1 - m12 	Responsive sizes for medium screens
+s1 - s12 	Responsive sizes for small screens
+
+http://www.etnassoft.com/2016/11/03/manipulacion-de-imagenes-con-javascript-parte-1/
+
+Usar archivos de aplicaciones web
+https://developer.mozilla.org/en-US/docs/Web/API/File/Using_files_from_web_applications
+
+Ejemplo: mostrar miniaturas de imágenes seleccionadas por el usuario
+https://developer.mozilla.org/en-US/docs/Web/API/File/Using_files_from_web_applications#example_showing_thumbnails_of_user-selected_images
+
+File.webkitRelativePath
+https://developer.mozilla.org/en-US/docs/Web/API/File/webkitRelativePath#browser_compatibility
+
+cómo enviar una imagen al servidor con http.post en javascript y almacenar base64 en mongodb
+https://stackoverflow.com/questions/34972072/how-to-send-image-to-server-with-http-post-in-javascript-and-store-base64-in-mon
+
+=========================================================
+
+    <!--     <input accept="image/*" id="btn_imagen" multiple="" name="imagen" type="file"/>
+    <div class="w3-container">
+      <h2>
+        Mobile First Responsiveness
+      </h2>
+      <p class="w3-large">
+        Try to resize the window!
+      </p>
+    </div>
+    <div class="w3-row minaturas">
+      <div class="w3-col l1 m1 s1">
+         <canvas class="myCanvas" height="50" width="50">
+        </canvas>
+        <img alt="Vista previa" class="vista_previa" src=""/>
+      </div>
+      <div class="w3-col l1 m1 s1">
+       <canvas class="myCanvas" height="50" width="50">
+        </canvas> 
+        <img alt="Vista previa" class="vista_previa" src=""/>
+      </div>
+      <div class="w3-col l1 m1 s1">
+       <canvas class="myCanvas" height="50" width="50">
+        </canvas> 
+        <img alt="Vista previa" class="vista_previa" src=""/>
+      </div>
+      <div class="w3-col l1 m1 s1">
+         <canvas class="myCanvas" height="50" width="50">
+        </canvas> 
+        <img alt="Vista previa" class="vista_previa" src=""/>
+      </div>
+      <div class="w3-col l1 m1 s1">
+        <canvas class="myCanvas" height="50" width="50">
+        </canvas> 
+        <img alt="Vista previa" class="vista_previa" src=""/>
+      </div>
+    </div> -->
+    <!--     <div class="w3-container">
+      <div class="example">
+        <div class="file-select">
+          <label for="avatar">
+            Choose a profile picture:
+          </label>
+          <input accept="image/png, image/jpeg" id="avatar" name="avatar" type="file"/>
+        </div>
+        <img alt="Image preview..." class="preview" height="200" src=""/>
+        <div class="event-log">
+          <label>
+            Event log:
+          </label>
+          <textarea class="event-log-contents" readonly="">
+          </textarea>
+        </div>
+      </div>
+    </div> -->
