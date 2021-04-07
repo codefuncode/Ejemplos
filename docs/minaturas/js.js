@@ -296,10 +296,12 @@ function prueba8(argument) {
 
     let imagenes = document.getElementById("imagenes");
     let display = document.getElementById("display");
+
     let imagen1 = document.getElementById("imagen1");
     let imagen2 = document.getElementById("imagen2");
     let imagen3 = document.getElementById("imagen3");
     let imagen4 = document.getElementById("imagen4");
+
     let add1 = document.getElementById("add1");
     let remove1 = document.getElementById("remove1");
 
@@ -312,10 +314,15 @@ function prueba8(argument) {
     let add4 = document.getElementById("add4");
     let remove4 = document.getElementById("remove4");
 
+    let secion_img = document.querySelectorAll(".img_display");
     let agregar_multiple = document.getElementById("agregar_multiple");
     let img_cantidad = 4;
     let rutas = [];
-
+    let url_fondo = "fondo.jpeg";
+    for (var i = 0; i < 4; i++) {
+        rutas.push(url_fondo);
+    }
+    console.log(rutas);
     agregar_multiple.addEventListener("click", function(argument) {
         imagenes.click();
 
@@ -368,7 +375,6 @@ function prueba8(argument) {
                 //     // display.appendChild(contenedor[i]);
                 // }
 
-                let secion_img = document.querySelectorAll(".img_display");
                 for (var i = 0; i < secion_img.length; i++) {
                     secion_img[i].src = "fondo.jpeg";
                 }
@@ -394,10 +400,23 @@ function prueba8(argument) {
     // ================================================
     add1.addEventListener("click", function(argument) {
         imagen1.click();
+
     }, false);
 
     imagen1.addEventListener("change", function() {
         console.log(this.files);
+        let img = new Image();
+        img.src = URL.createObjectURL(this.files[0]);
+        rutas[0] = URL.createObjectURL(this.files[0]);
+        img.width = 75;
+        img.height = 75;
+
+        img.addEventListener("load", function() {
+            URL.revokeObjectURL(this.src);
+
+        }, false);
+        secion_img[0].src = rutas[0];
+        console.log(rutas);
     }, false);
 
     // ================================================
@@ -407,6 +426,18 @@ function prueba8(argument) {
 
     imagen2.addEventListener("change", function() {
         console.log(this.files);
+        let img = new Image();
+        img.src = URL.createObjectURL(this.files[0]);
+        rutas[1] = URL.createObjectURL(this.files[0]);
+        img.width = 75;
+        img.height = 75;
+
+        img.addEventListener("load", function() {
+            URL.revokeObjectURL(this.src);
+
+        }, false);
+        secion_img[1].src = rutas[1];
+        console.log(rutas);
     }, false);
 
     // ================================================
@@ -416,14 +447,64 @@ function prueba8(argument) {
 
     imagen3.addEventListener("change", function() {
         console.log(this.files);
+        let img = new Image();
+        img.src = URL.createObjectURL(this.files[0]);
+        rutas[2] = URL.createObjectURL(this.files[0]);
+        img.width = 75;
+        img.height = 75;
+
+        img.addEventListener("load", function() {
+            URL.revokeObjectURL(this.src);
+
+        }, false);
+        secion_img[2].src = rutas[2];
+        console.log(rutas);
     }, false);
 
     // ================================================
-    add1.addEventListener("click", function(argument) {
-        imagen1.click();
+    add4.addEventListener("click", function(argument) {
+        imagen4.click();
     }, false);
 
-    imagen1.addEventListener("change", function() {
+    imagen4.addEventListener("change", function() {
         console.log(this.files);
+        let img = new Image();
+        img.src = URL.createObjectURL(this.files[0]);
+        rutas[3] = URL.createObjectURL(this.files[0]);
+        img.width = 75;
+        img.height = 75;
+
+        img.addEventListener("load", function() {
+            URL.revokeObjectURL(this.src);
+
+        }, false);
+        secion_img[3].src = rutas[3];
+        console.log(rutas);
     }, false);
+
+    remove1.addEventListener("click", function(argument) {
+
+        rutas[0] = url_fondo;
+        secion_img[0].src = rutas[0];
+        console.log(rutas);
+    }, false);
+
+    remove2.addEventListener("click", function(argument) {
+        rutas[1] = url_fondo;
+        secion_img[1].src = rutas[1];
+        console.log(rutas);
+    }, false);
+
+    remove3.addEventListener("click", function(argument) {
+        rutas[2] = url_fondo;
+        secion_img[2].src = rutas[2];
+        console.log(rutas);
+    }, false);
+
+    remove4.addEventListener("click", function(argument) {
+        rutas[3] = url_fondo;
+        secion_img[3].src = rutas[3];
+        console.log(rutas);
+    }, false);
+
 }
