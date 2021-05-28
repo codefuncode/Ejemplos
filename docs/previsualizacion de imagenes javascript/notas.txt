@@ -1,0 +1,11 @@
+En esta entrada de Blog se explicara por medio de ejemplo una pequeña funcionalidad  que tiene la capacidad de mostrar una vista previa de imágenes y mantener el control para incorporar, modificar y/o la eliminación de las imágenes que el usuario enviara posteriormente al servidor web. 
+
+
+
+Comenzamos  
+
+Para este ejercicio  elementos  HTML  y javaScript  para que sea el navegador web el encargado de realizar todos las operaciones necesarias hasta que el usuario este seguro de que imágenes enviara, ademas da la posibilidad de revitalizar las imágenes seleccionadas. 
+
+1. creamos cuatro elementos input file que estarán ocultos  a la vista del para el usuario. 
+
+2 creamos elementos visibles para le usuario para le usuario con la cantidad de etiquetas  para las imágenes que en este caso serna 4 imágenes 

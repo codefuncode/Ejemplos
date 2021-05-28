@@ -1,0 +1,182 @@
+ ALGORITMO #1
+ALGORITMO: PromedioDESCRIPCIÓN: Calcular la media (promedio) de 3 númerosCONSTANTES: --------------------------------VARIABLES: Entero: N
+1
+, N
+2,
+N
+3
+Real: PromINICIO1.Leer N
+1
+, N
+2,
+N
+3
+2.Prom= (N
+1
++ N
+2+
+N
+3
+)/33.Escribir PromFIN
+ 
+ALGORITMO #2
+ALGORTMO: Promedio finalDESCRIPCCION: Elaborar un algoritmo para calcular el promediofinal de la materia de algoritmos. Dicha calificación se compone delos siguientes porcentajes.55% -----del promedio final de sus calificaciones parciales (3)30% ----- de la calificación de promedio15% ----- de la calificación de un trabajo finalCONSTANTE: ----------------------------------VARIABLE: Real: P
+1
+, P
+2
+, P
+3
+, Prom., Examen, TrabajoF, Prom. FinalINICIO1.Leer P
+1
+, P
+2
+, P
+3
+2.Prom=(( P
+1
++ P
+2
++ P
+3
+)/3)*0.553.Leer Examen4.Leer TrabajoF5.Prom. Final= (Prom + (Examen*0.30) + (TrabajoF *0.15) )6.Escribir Prom. FinalFIN
+ 
+ALGORITMO #3
+ALGORITMO: SueldoDESCRIPCCION: Calcular el sueldo de un empleado dados comodatos de entrada: el nombre, hrs. De trabajo y el pago en hr.CONSTANTE: Real: Pagohr=50.30VARIABLE: Cadena: nombre Entero: hrs. Real: SueldoINICIO1.Leer nombre2.Leer hrs.3.Sueldo= Pagohr*hrs4.Escribir Sueldo, nombreFIN
+ALGORITMO #4
+ALGORITMO: EvaluaciónDESCRIPCCION: Elaborar un algoritmo que obtenga e imprima elvalor de Y a partir de la ecuación.Y= 3*X
+2
++ 7X - 15CONATANTE: ------------------VARIABLE: Real: X, YINICIO1.Leer X2.Y= (3*X*X)+(7*x) -153.Escribir YFIN
+ALGORITMO #5
+ALGORITMO: Sistema de ecuacionesDECRIPCCION: El sistema de ecuaciones lineales:
+ 
+ax + by= Cdx + dy= fSe puede resolver con las formulas:X= ce – bfae – bd y= af – cdae – bdSi ae – bd
+≠
+0Elabore un algoritmo que lea los coeficientes a, b, c. e, f, ycalcule los valores de x,, y.CONSTANTE: ------------------------VARIABLE: Real: a, b, c. d, e, f, x, yINICIO1.Leer a, b, c, d, e, f2.x=(c*e) – (b*f) /(a*e) – (b*d)3.y=(a*f) – (c*d) / (a*e) – (b*d)4.Escribir x, yFIN
+ALGORITMO #6
+ALGORITMO: Valor absolutoDESCRIPCCION: Calcular el valor absoluto de un numero
+│ x │ x Si x>0-x Si x <o
+CONSTANTES: ----------------------VARIABLES: Entero: x
+ 
+INICIO1.Leer x2.Si (x<0) entoncesX= x*(-1)Fin_si3.Escribir xFIN
+ALGORITMO #7
+ALGORITMO: Par o imparDESCRIPPCION: Elabora un algoritmo para leer un numero ydeterminar si es par o impar.CONSTANTE: ---------------------------VARIABLE: Entero: NINICIO1.Leer N2.Si (N%2=0) entoncesEscribir “N en par”Si no Escribir “N es impar”Fin _ síFIN
+ALGORITMO #8
+ALGORITMO: NúmerosDESCRIPCCION: Elaborar un algoritmo para leer 3 números ydeterminar sí uno es la suma de los otros dos.CONSTANTES: -----------------------------VARIABLES: entero: N
+1
+, N
+2
+, N
+3
+ 
+8.FIN
+ALGORITMO #20.C
+ALGORITMO: Mayor _MenorDESCRIPCCION: Algoritmo para leer 25 números, obtener supromedio, el mayor y menor de esos números.CONSTANTE: ---------------------------VARIABLE: Entero: mayor, menor, num, i Real: promINICIO1.Leer numMayor= numMenor= numProm= num2.Leer num3.Hacer prom= prom + numSí (num<= menor)Menor= numFin _síSí (num>= mayor)Mayor= numFin _síi= i + 1Mientras (i<= 25)4.Escribir “El promedio :”, prom/258.Escribir “El numero menor es:”, menor9.Escribir “El numero mayor es”, mayor10.FIN
+ALGORITMO #21
+ 
+ALGORITMO: Tabla de multiplicarDESCRIPCCION: Escribir un algoritmo que solicite un numero (1-10) y muestre la tabla de dicho número.CONSTANTE: -------------------------VARIABLE: Entero: i, num.INICIO1.Sí (num>= 1 y num<=10)2.Para i= 1 hasta i= 10 hacerNum= num *i3.Escribir num, “*”, i, “=” , num*iFin _síFin _paraFIN
+ALGORITMO #22
+ALGORITMO: PuntuaciónDESCRIPCCION: Cuatro enteros entre 0 y 100 representan laspuntuaciones de un estudiante de informática. Escribir un programapara encontrar la media de estas puntuaciones y visualizar unatablado notas de acuerdo al siguiente cuadro
+:MEDIA PUNTUACION
+90-100A80-89B70-79C60-69D0-59ECONSTANTE: ---------------------------VARIABLE: Entero: N
+1
+, N
+2
+, N
+3
+, N
+4
+Real: promINICIO1.Leer N
+1
+, N
+2
+, N
+3
+, N
+4
+ 
+2.Sí (N
+1
+>= 0 y N
+1
+<=100) y (N
+2
+>= 0 y N
+2
+<=100) y (N
+3
+>= 0 y N
+3
+<=100) y (N
+4
+>= 0 y N
+4
+<=100) entoncesprom= ( N
+1
++ N
+2
++ N
+3
++ N
+4
+)/4Sí no Escribir “Algún N esta fuera de rango”Fin _sí3.Sí (prom>= 0 y prom<= 59) entoncesEscribir “Tu puntuación es E”Fin _síSí no sí (prom>= 60 y prom<= 69) entoncesEscribir “Tu puntuación es d”Fin _síSí no sí (prom>= 70 y prom<= 79) entoncesEscribir “Tu puntuación es C”Fin _síSí no sí (prom>= 80 y prom<= 89) entoncesEscribir “Tu puntuación es B”Fin _síSí no sí (prom>= 90 y prom<= 100) entoncesEscribir “Tu puntuación es A”Fin _sí4.FIN
+ALGORITMO #24
+ALOGORITMO: Año bisiestoDASCRIPCCION: Escribir un programa que determine si un añoes bisiesto. Un año es bisiesto si es múltiplo de 4 (por ejemplo1984). Sin embargo los años múltiplos de 100 solo son bisiestos sia la vez son múltiplos de 400 (por ejemplo 1800 no es no esbisiesto, mientras que 2000 silo será).CONSTANTE: --------------------------VARIABLE: Entero: año
+ 
+INICIO1.Leer año2.Sí /año%100!= 0) entoncesSí (año%4= 0) entoncesEscribir “Año Bisiesto”Sí no Escribir “El año no es Bisiesto”Fin –síSí no sí (año%400= 0) entoncesEscribir “Año Bisiesto”Sí no “El año no es Bisiesto”Fin –síFin _sí3.FIN
+ALGORITMO #25
+ALGORITMO: CalculadorDESCRIPCCION: Escribir y ejecutar un programa que simule uncalculador simple. Lee dos números y un carácter. Si el carácteres +, se imprime la suma; si el carácter es un -, se imprime ladiferencia; si el carácter es un *, se imprime el producto; si elcarácter es un /, se imprime el cociente; y si es una %, seimprime el residuo.CONSTANTE: --------------------------------VARIABLE: Entero: Opción, a, b Real: rINICIO1.Leer opción, a, b2.Según (opción) sea1: (r= a+b)2: (r= a-b)3: (r= a*b)4: (r= a/b)
+ 
+5: (r= a%b)Escribir rSi no Escribir “No se puede hacer otra operación” r=0Fin _según3.FIN
+ALGORITMO #26
+ALGORITMO: Numero _ mayorDESCRIPCCION: Elaborar un programa que determine el mayorde tres números.CONSTANTE: -------------------------VARIABLE: Real: a, b, cINICIO1.Leer a, b, c2.Sí (a<b y a>b) entoncesEscribir “El número mayor es:” aFin _síSí no sí (b<a y b>c) entoncesEscribir “El número mayor es:” bFin _síSi no sí (c<a y c>b) entoncesEscribir “El número mayor es:” cFin _síSí no Escribir “No se puede determinar cual es el número mayor”Fin _síFIN
+ALGORTIMO #27
+ALGORITMO: CalificaciónDESCRIPCCION: Codificar un programa que escriba la calificacióncorrespondiente a una nota, de acuerdo con el siguiente criterio:
+ 
+Sí no sí (A=”J”) entoncesn= 15Fin_ síSí no sí (A=”C”)n=40Fin_ síSí noEscribir “Animal no reconocido”Fin_ sí3.Para i=1 hasta i=n hacerLeer edadSí (edad>=0 y edad<= 1) entoncesk= k+1Fin_ síSí no sí (edad>1 y edad <3) entoncesl= l+1Fin_ síSí no sí (edad>=3) entoncesp= p+1Fin_ síEscribir k*100/nl*100/np*100/n4.FIN
+ALGORITMO #35
+ALGORITMO: RelojDESCRIPCCION: Simular el comportamiento de un reloj digital, imprimiendo lahora, minutos y segundos de un día desde las 00:00:00 horas hasta las23:59:59 horasCONSTANTE: -------------------------------------------VARIABLE: Entero: h, m, sINICIO
+ 
+1.Para h= 0 hasta h= 23 hacerPara m= 0 hasta m= 60 hacerPara s= 0 hasta s= 60 hacer2.Escribir “La hora es” h, “:”, m, “:”, s3.Fin _paraFin _paraFin _para4.FIN
+ALGORITMO #36
+ALGORITMO: NeumáticosDESCRIPCCION: La presión, volumen y temperatura de una mas de aire serelaciona por la formula:masa= presión*volumen0.37*(temperatura +460)CONSTANTE: --------------------------------------------------------VARIABLE: Entero: n, i Real: p, v, t, masa= 0INICIO1.Leer n2.Para i= 1 hasta i= n hacerLeer tipo, v, p, tSí tipo= “motocicleta” entoncesmasa1= [masa1 + p*v/(0.37*(t +460))] *2Sí no sí (tipo= “automóvil”) entoncesmasa2= [masa2 + p*v/(0.37*(t +460))] *4Fin –síFin _síFin _para3.Escribir “El promedio de los vehículos es:” masa1 + masa2/64.FIN
+ALGORITMO #37
+ALGORITMO: Cámara de DiputadosDESCRIPCCION: En una Cámara de Diputados se levanto una encuesta contodos los integrantes con el fin de determinar con porcentaje de los ndiputados están a favor del Tratado del Libre Comercio, que porcentaje estaen contra y que porcentaje se abstiene.
+ 
+CONSTANTE: -----------------------------------------------VARIABLE: Entero: n, i, F, C, A Cadena: respuestaINICIO1.Leer n2.Para i= 1 hasta i=n hacerLeer respuestaSí (respuesta= “a favor”) entoncesF= F+1Sí no sí (respuesta= “en contra”) entoncesC= C+1Sí no A= A+1Fin _síFin _síFin _síFin _para3.Escribir “A favor” F*100/n“En contra” C*100/n“Se abstienen” A*100/n4.FIN
+ALGORITMO #38
+ALGORITMO: SeccionesDESCRIPCCIO: Un jefe de casilla desea determinar cuantas personas de cadauna de las secciones que componen su zona asisten al día de las votaciones. Lassecciones son: norte, sur, centro. También desea determinar cual es la seccióncon mayor número de votantes.CONSTANTE: ------------------------VARIABLE: Cadena= sección, nom Entero: i, N= 0 S= 0, A= 0, mayorINICIO1.Mientras (i!= 0) hacerLeer secciónSí (sección= “Norte”) entoncesN= N +1Sí no sí (sección= “Sur”) entoncesS= S +1Sí (sección= “Centro”) entoncesC= C +1
+ 
+Sí no Escribir “Sección no reconocida”i= i +1Fin _síFin _síFin _sí2.Sí (N>S y N>C) entoncesmayor= N y nom= “Norte”Sí no sí (S>N y S>C) entoncesmayor= S y nom= “Sur”Sí no sí (C>S y C>N) entoncesmayor= C y nom= “Centro”Fin _síFin _síFin _sí3.Escribir “Sí terminaste de contar oprime 0”4.Leer iFin _mientras5.Escribir“Sección norte” N“Sección sur” S“Sección centro” C“Sección con mayor numero de votos” nom6.FIN
+ALGORITMO #39
+ALGORITMO: ReprobadosDESCRICCION: Leer 50 calificaciones de un grupo de alumnos. Calcule yescriba el porcentaje de reprobados. Tomando en cuenta que la calificaronmínima aprobatoria es de 70CONSTANTE: ---------------------------------------VARIABLE: Entero: i Real: calf, p= 0INICIO1.Para i= 1 hasta i= 50 hacerLeer calfSí (calf<7.0 y cal>0) entoncesP= p +1Sí no sí Escribir “No esta reprobado”
+ 
+Fin _síFin _para2.Escribir “Porcentaje de reprobados” p*100/503.FIN
+ALGORITMO #40
+ALGORITMO:DESCRIPCCION: Leer 250 000 votos otorgados a los 3 candidatos agobernador e imprimir el numero del candidato y su cantidad de votos.CONSTANTE: ----------------------------------------VARIABLE: Entero: i, k= 0, l= 0, m= 0INICIO1.Leer v2.Mientras (i= 1 hasta i<= 250000) hacerSí (v=1) entoncesK= k +1Sí no sí (v=2) entoncesl= l +1Sí no sí (v=3) entoncesm= m +1i= i +1Fin _síFin _síFin _síFin _mientras3.Escribir“Numero de votos del 1° candidato” k“Numero de votos del 2° candidato” l“Numero de votos del 3° candidato” m4.FIN
+ALGORITMO #41
+ 
+ALGORITMO: TiendaDESCRIPCCION: Suponga que tiene un tienda y desea registrar sus ventaspor medio de una computadora. Diseñe un pseudocódigo y programa que lea porcada cliente:a)El monto de la ventab)Calcule e imprima el IVAc)Calcule e imprima el total a pagard)Lea la cantidad con que paga el clientee)Calcule e imprima el cambioAl final del día deberá imprimir la cantidad de dinero que debe haber en lacaja.CONSTANTE: ------------------------------------------VARIABLE:INICIOMientras (i!= 0) hacerLeer mI= M* 0.15Escribir “El IVA es:” IT= M +IEscribir “el total a pagar es:” T Leer DC= D-TiEscribir “Su cambio es:” CK= K +1i= i +1Escribir “Sí desea terminar oprima 0”Leer iFin _mientrasEscribir “Total en la caja” kFIN
+ALGORITMO #42
+ALGORITMO: AnguloDESCRIPCCION: Diseñe un pseudocódigo y el programa que lea el valor de unángulo expresado en radianes y calcule e imprima el valor del seno de dichoángulo. Se leerá también el número de términos de la serie.SEN(X)= X-(X
+3
+/3!) + (X
+5
+/5!) – (X
+7
+/7!) +
+ 
+CONSTANTE: pi= 3.1416VARIABLE: Entero: Angulo, Z=0, F=1, P= 0, H= 0 Real: yINICIO1.Leer Angulo2.Y= (pi* Angulo)/1803.Leer N4.Para n=1 hasta i= N hacerZ= Z+ pow((-1), n+1) * pow((y), 2*n-1))H= H + 2*n-15.Para j= 1 hasta j= H hacerF= F*jFin _paraP= P + Z/FFin _para6.Escribir “ El valor del seno es” p7.FIN
+ALGORITMO # 43
+ALGORITMO: Múltiplo de 6DESCRIPCCION: Lea un vector de N elementos y luego imprima cuantos ycuales elementos son múltiplos de 6.CONSTANTE: --------------------------------VARIABLE: Entero: A[100], i, N, contador= 0INICIO1.Leer N2.Para i=0 hasta i= N-1 hacerLeer A[i]Fin _para3.Para i= 0 hasta i= N-1 hacerSí (A[i]%6==m 0) hacerContador= contador + 1Escribir A[i]Fin _síFin _para4.Escribir “El numero de múltiplos de 6 es” contador5.FIN
+ 
+ALGORITMO # 44
+ALGORITMO: Vector mayorDESCRIPCCION: Llenar un vector de 20 elementos, que imprima la posición yel valor del elemento mayor almacenado en el vector. Suponga a los elementosson diferentes.CONSTANTE: ----------------------------------------VARIABLE: Entero: i mayor= 0, A[20]INICIO1.Para i= 0 hasta i= 20-1 hacer2.Leer A[i]Sí (A[i]> mayor) entoncesmayor = A[i]posc= iFin _síFin _para3.Escribir “El valor del elemento mayor es:” mayor “Su posición es:” posc4.FIN
+ALGORITMO # 45
+ALGORITMO: Dos vectoresDESCRIPCCION: Llenar dos vectores A y B de 45 elementos cada uno, sumarel elemento uno del vector A con el elemento del vector B y así sucesivamentehasta 45, almacenar el resultado en un vector C, e imprimir el vectorresultante.CONSTANTE: ---------------------------------VARIABLE: Entero: A[45], B[45], C[45]INICIO1.Para i= 0 hasta i= 45-1 hacerLeer A[i]Leer B[i]Fin _para2.Para i= 0 hasta i= 45-1 hacerC[i]= A[i] + B[i]Fin _para3.Escribir C[i]
+ 
+4.FIN
+ALGORITMO #46
+ALGORITMO: InversoDESCRIPCCION: Lea un vector de 10 elementos enteros y luego los imprima enun orden inverso.CONSTANTE: ----------------------------VARIABLE: Entero: A[10]INICIO1.Para i= 0 hasta i= 10-1 hacerLeer A[i]Fin _para2.Para i= 10-1 hasta i= 0 hacerEscribir A[i]Fin _para3.FIN
+ALGORITMO #47
+ALGORITMO: TraductorDESCRIPCCION: Elabore un traductor simple de ingles a español utilizandodos arreglos de tipo cadena como 20 palabras como mínimo.CONTANTE: ---------------------------------------------VARIABLE: carácter *E[40], I*[20]INICIO1.Para i= 0 hasta i=19 hacerLeer *I[20]Leer*E[20]Fin _paraPara i= 0 hasta i=19 hacerI[i]=E[i]S[i]=E[i]Para i=0 hasta i=19 hacer
+  

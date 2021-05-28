@@ -1,0 +1,14 @@
+ 
+
+Condicion A		 Triangulo  esisten depositos 
+
+condicion B				    	Triangulo   Existen reguistros de clientes == true ->  Condicion C	== talse Condicion A	
+
+condicion C			           		  Trisangulo codigo_deposito = cliente_numero_cuenta == true ->  Proseso A == talse Condicion A	
+						                
+Proseso A				            			Clinetes_balance =
+						            					Clinetes_balance + Depositos_cantidad
+
+		          
+
+Condicion  fim
