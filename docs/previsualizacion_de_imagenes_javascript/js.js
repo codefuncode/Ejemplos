@@ -91,6 +91,7 @@ function prueba(argument) {
     // Entonces cuando este elemento detecte un cambio 
     // osea nuevos elementos de imágenes  pues se activara 
     btn_imagenes.addEventListener("change", function() {
+        //  Sección #1
         // =======================
         //  Desplegamos el consola la cantidad de 
         // imágenes que selecciono el usuario
