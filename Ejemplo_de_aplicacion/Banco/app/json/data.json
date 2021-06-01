@@ -1,0 +1,34 @@
+{
+    "cliente": {
+        "id_cliente": "xxxxxxxxx",
+        "apellido_cliente": "xxxxxxxxx",
+        "telefono_cliente": "xxxxxxxxx",
+        "edad_cliente": "xxxxxxxxx",
+        "sexo_cliente": "xxxxxxxxx",
+        "fecha_nacimINTo_cliente": "xxxxxxxxx",
+        "telefono_cliente": "xxxxxxxxx",
+        "numero_identificacion_cliente": "xxxxxxxxx",
+        "correo_cliente": "xxxxxxxxx",
+
+    },
+    "depositos": {
+        "id_deposito": "xxxxxxxxx",
+        "id_agencia": "xxxxxxxxx",
+        "id_cliente": "xxxxxxxxx",
+        "cantidad": "xxxxxxxxx",
+        "fecha": "xxxxxxxxx",
+    },
+    "agegencia": {
+        "id_agencia": "xxxxxxxxx",
+        "nombre_agencia": "xxxxxxxxx",
+    },
+    "transaccion": {
+        "id_transaccion": "xxxxxxxxx",
+        "id_cliente": "xxxxxxxxx",
+        "fecha": "xxxxxxxxx",
+        "cantidad": "xxxxxxxxx",
+        "pago": "xxxxxxxxx",
+        "depopsito": "xxxxxxxxx",
+        "transferencia": "xxxxxxxxx",
+    }
+}
