@@ -1,0 +1,147 @@
+Nombre: 
+Género: 
+Edad: 
+Oficio: 
+
+
+
+Altura: 
+Contextura: 
+Color de piel: 
+Color de cabello: 
+Largo del cabello: 
+
+Vestimenta: 
+
+
+Forma del rostro: 
+Grosor de labios: 
+Forma de la nariz:
+Forma de los ojos:
+Color de ojos:
+
+Tipo de cabellos
+Lacio o tipo uno.
+Ondulado o tipo dos.
+Rizado o tipo tres.
+Crespo o tipo cuatro.
+
+actividades_de_ocio nocturno: 
+Ocio espectáculo:
+Ocio activo:
+Ocio pasivo:
+
+
+actividades caseras 
+
+Jugar a videojuegos
+Seguir ampliando tu formación
+Motar una fiesta a distancia
+Aprender a cocinar
+Ponerte en forma
+Leer libros, revistas o cómics
+Escuchar podcast
+Ver vídeos, películas o series
+Aprender idiomas
+Crear tu propio huerto en casa
+Limpiar
+Poner a punto el ordenador
+Ordenar los armarios
+Puzzles y juegos de mesa
+Simplemente, no hacer nada
+
+Actividades externas 
+
+Realizar ejercicio físico
+Disfrutar del mejor cine
+Estudiar​
+Quedar con tus amigos
+Ir de shopping 
+
+
+
+Música clásica
+
+Ópera
+
+Música tradicional
+
+Jazz
+
+Blues
+
+Rhythm and Blues
+
+Rock and Roll
+
+Pop
+
+Rock
+
+Gospel
+
+Soul
+
+Metal
+
+Country
+
+Rap
+
+Música electrónica
+
+Hip-Hop
+
+Reggae
+
+Reggaeton
+
+Bachata
+
+Balada
+
+Salsa
+
+Punk
+
+Cumbia
+
+Disco
+
+Mambo
+
+Bolero
+
+Trip-hop
+
+Folk
+
+Swing
+
+New Age
+
+Bossa nova
+
+
+
+
+Modelo 1
+
+su forma: alargada, cuadrada, redonda, gordita, delgadita…
+ojos: claros, oscuras, grandes pequeños, saltones, vivaces, gafas…
+nariz: alargada, pequeña, chata, ancha, fina…
+boca: labios gruesos, finos, grande pequeña, de boton, dientes torcidos o no, blancos o amarillentos, aparato…
+Pelo: oscuro, claro, con brillo, sin brillo, largo, corto, rizado, liso, ondulado, si suele llevar coleta, suelto, trenza, flequillo recto…
+tez: clara oscura, con muchos lunares, con pocos lunares, granos, pecas…
+
+Cuerpo;
+
+Gordo, delgado, fina, musculoso, ancho, alto, bajo, pies grandes pequeños, piernas largas (aunque sea bajo puede ser) piernas finas, pies anchos, alargados, manos grandes, uñas alargadas, mucho pelo poco..
+
+Vestimenta;
+
+Ropa ajustada, poco ajustada, colores que mas  suele utilizas, negro, colorido, si usa vaqueros, si usa accesorios, pulseras, collares, si usa deportivas, tacones, si lleva faldas, cortas, largas, bufanda, accesorios en el pelo, maquillaje…
+
+Personalidad;
+
+Bueno persona, amable, pacifico negativo, llorón, alegre, oportunista, liberal, egoísta, huraño, cordial, tímido, extrovertido
