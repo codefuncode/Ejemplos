@@ -1,0 +1,72 @@
+.w3_theme_l5 {
+    color: #000 !important;
+    background-color: #fefbf5 !important
+}
+.w3_theme_l4 {
+    color: #000 !important;
+    background-color: #fcf2dc !important
+}
+.w3_theme_l3 {
+    color: #000 !important;
+    background-color: #f9e6ba !important
+}
+.w3_theme_l2 {
+    color: #000 !important;
+    background-color: #f5d997 !important
+}
+.w3_theme_l1 {
+    color: #000 !important;
+    background-color: #f2cd75 !important
+}
+.w3_theme_d1 {
+    color: #000 !important;
+    background-color: #ecb535 !important
+}
+.w3_theme_d2 {
+    color: #000 !important;
+    background-color: #e9ab18 !important
+}
+.w3_theme_d3 {
+    color: #fff !important;
+    background-color: #ce9613 !important
+}
+.w3_theme_d4 {
+    color: #fff !important;
+    background-color: #b08010 !important
+}
+.w3_theme_d5 {
+    color: #fff !important;
+    background-color: #936b0e !important
+}
+.w3_theme_light {
+    color: #000 !important;
+    background-color: #fefbf5 !important
+}
+.w3_theme_dark {
+    color: #fff !important;
+    background-color: #936b0e !important
+}
+.w3_theme_action {
+    color: #fff !important;
+    background-color: #936b0e !important
+}
+.w3_theme {
+    color: #000 !important;
+    background-color: #efc050 !important
+}
+.w3_text_theme {
+    color: #efc050 !important
+}
+.w3_border_theme {
+    border_color: #efc050 !important
+}
+.w3_hover_theme:hover {
+    color: #000 !important;
+    background-color: #efc050 !important
+}
+.w3_hover_text_theme:hover {
+    color: #efc050 !important
+}
+.w3_hover_border_theme:hover {
+    border_color: #efc050 !important
+}
