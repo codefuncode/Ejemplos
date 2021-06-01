@@ -1,0 +1,29 @@
+Análisis del enunciado
+
+
+Los clientes del Banco Impopular reciben depósitos en sus cuentas bancarias de ahorros de diferentes fuentes tales como la Administración de Sistemas de Retiro, Seguro Social, Veteranos, ASUME, etc. 
+
+
+Clientes reciben depósitos de diferentes fuentes 
+
+Tabla Cliente
+
+Tabla Depósitos
+
+Tabla Entidades publicas / Privadas 
+
+Tabla Tarjeta débito
+
+Tabla Archivo Maestro
+Tabla Archivo Deposito 
+Tabla Archivo Clientes
+
+Tabla Transacciones
+
+Tabla Récords
+
+
+Crear cu8entas bancarias
+Crear tres archivos Deposito, Maesrtro , Clintes 
+Debe actualizar imprimir transacciones 
+Leer datos de archivos 

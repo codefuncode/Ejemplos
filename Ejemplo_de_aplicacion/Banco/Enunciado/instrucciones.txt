@@ -1,0 +1,49 @@
+Atlantic University College
+Guaynabo, P.R.
+
+CCO109 – Programming Logic: Proyecto Final
+
+Narrativo: Los clientes del Banco Impopular reciben depósitos en sus cuentas bancarias de ahorros de diferentes fuentes tales como la Administración de Sistemas de Retiro, Seguro Social, Veteranos, ASUME, etc. El personal del banco registra estos depósitos de forma manual en unas tarjetas de cartón para cada cliente. Luego de registrado el depósito, los clientes pueden hacer sus transacciones de retiro, transferencia y pagos de forma manual en persona. 
+
+El banco quiere computarizar el sistema y que esté lo más modernizado y actualizado posible y contrata la compañía para la cual usted trabaja para que realice el análisis, diseño y posterior programación de todo el proyecto. Ellos también desean poder emitir una tarjeta de débito a los clientes que la soliciten con la cual puedan pagar, retirar y o transferir.
+
+Su jefe le envía a usted el baloon chart que se muestra abajo para que, como programador, usted realice los flujogramas pertinentes del sistema. El sistema se compone de 2 programas que se complementan.
+Baloon Chart
+
+
+Programa batch – Este programa procesa un archivo de Depósitos a las cuentas de los clientes y actualiza el Archivo Maestro sumándole el depósito al balance en el Maestro de Clientes y lista cada transacción y los totales de récords leídos y récords actualizados. 
+
+Abrirá los archivos de Depósitos, Maestro y un Listado de las Transacciones procesadas. Llevará el total de récords leídos y el total de récords actualizados y lo imprimirá al terminarse los récords del Archivo de Depósitos. 
+
+Procederá a leer todo el archivo de depósitos de forma secuencial (uno tras otro) del archivo de los clientes y usando la clave del cliente en dicho archivo, accederá el récord en el Maestro de Clientes donde actualizará las cuentas de ellos. 
+
+Le sumará la cantidad depositada en el archivo de depósitos al balance que tenga la cuenta en el Maestro de Clientes. Luego reescribirá el récord en el Maestro y escribirá la transacción en un listado en la impresora. Luego procederá a leer el próximo récord y repetirá el ciclo hasta haber procesado todos los récords y terminar de leer el archivo de depósitos (EOF). Luego de terminado de leer el archivo de depósitos y procesar todos los récords de ese archivo, imprimirá los totales de control, cerrará los 3 archivos que abrió y terminará el programa.
+
+Programa ATM – Este programa procesa transacciones realizadas en un cajero electrónico (ATM).  Utiliza el archivo Maestro de clientes del banco, un Listado interno y un Recibo para el cliente. 
+El cliente insertará su tarjeta y el cajero (ATM) la validará, si la tarjeta es válida procederá a solicitarle el PIN al cliente. Si no es válida, pedirá re- insertarla de nuevo. Luego del tercer intento la ATM cajero retendrá la tarjeta y enviará un mensaje al cliente.  
+Si la tarjeta insertada es válida, solicitará el número de PIN, lo aceptará y lo validará y cotejará si el PIN está correcto. Si no lo está, enviará mensaje de PIN incorrecto y pedirá reentrarlo y también sumará uno a un contador de intentos del PIN. Si el cliente continúa entrando un PIN inválido repetirá el proceso de nuevo y luego de 3 intentos fallidos cancelará la transacción, enviará mensaje de PIN inválido y tarjeta retenida, retendrá la tarjeta y detendrá el programa. (Stop). 
+
+Si el Pin es válido, mostrará el Menú para que el cliente escoja entre estas 3 tipos de transacciones:
+Pago=P
+Retiro=R
+Transferencia=T
+
+El cliente escogerá una de esas 3 opciones. La aceptará, la validará y si es correcta la enviará a la subrutina pertinente. Si entra otra opción le dará un mensaje de Opción no es válida.  
+En la subrutina pertinente le pedirá que entre la cantidad a pagar, retirar, o transferir. Cotejará si esa cantidad excede de $500.00. Si excede de $500 le dará mensaje diciéndole que excede el límite de $500.00 y lo mantendrá dentro de la subrutina.  Luego y usando la información de la tarjeta sobre la cuenta, abrirá el Maestro para actualización y leerá el récord del cliente. Luego cotejará si la cantidad a pagar, retirar o transferir es mayor al balance de la cuenta del cliente.  Si excede el balance, lo devolverá al lugar donde se le pidió la cantidad a pagar, retirar o transferir. Si no excede, procederá a realizar el pago, retiro o transferencia.
+En el caso de pagar, pedirá la cuenta a pagar (L=Luz, A=Agua o T=Teléfono).  Aceptará y validará la cuenta entrada y en caso de ser una de las 3 anteriores procederá a realizar el pago. Si no es ninguna de ella dará mensaje de Opción de Pago invalida y devolverá el proceso a lugar donde pidió la opción, Si es una de las tres opciones (Luz, Agua o Teléfono) procederá a pagarla, descontar la cantidad pagada del récord del Maestro en memoria y reescribirá el Maestro y escribirá el listado interno del banco. 
+Luego preguntará si desea realizar otra transacción. Si la contestación es Si, lo devolverá al Menú de opciones. Si la contestación es No, preguntará si desea un recibo impreso. Si la contestación es Si, imprimirá un recibo de la transacción y cerrará los archivos y terminará el programa. Si la contestación es No cerrará los archivos y terminará el programa.
+En el caso de pagar, pedirá la cuenta a pagar (L=Luz, A=Agua o T=Teléfono).  Aceptará y validará la cuenta entrada y en caso de ser una de las 3 anteriores procederá a realizar el pago. Si no es ninguna de ella dará mensaje de Opción de Pago invalida y devolverá el proceso a lugar donde pidió la opción, Si es una de las tres opciones (Luz, Agua o Teléfono) procederá a pagarla, descontar la cantidad pagada del récord del Maestro en memoria y reescribirá el Maestro y escribirá el listado interno del banco. 
+Luego preguntará si desea realizar otra transacción. Si la contestación es Si, lo devolverá al Menú de opciones. Si la contestación es No, preguntará si desea un recibo impreso. Si la contestación es Si, imprimirá un recibo de la transacción y cerrará los archivos y terminará el programa. Si la contestación es No cerrará los archivos y terminará el programa.
+En el caso de retirar, emitirá la cantidad solicitada descontará la cantidad pagada del récord del Maestro en memoria y reescribirá el Maestro y escribirá el listado interno del banco. 
+Luego preguntará si desea realizar otra transacción. Si la contestación es Si, lo devolverá al Menú de opciones. Si la contestación es No, preguntará si desea un recibo impreso. Si la contestación es Si, imprimirá un recibo de la transacción y cerrará los archivos y terminará el programa. Si la contestación es No cerrará los archivos y terminará el programa.
+En el caso de transferir, pedirá la cuenta a transferir, abrirá y leerá el Maestro para actualizar, y si la cuenta existe, procederá a sumar la cantidad en la cuenta y reescribir el Maestro y restar la cantidad del Maestro y reescribirlo y escribir la transacción en el Listado interno del banco. Si no existe la cuenta procederá a enviar mensaje y devolver el proceso al lugar donde pidió la cuenta a transferir. 
+Luego preguntará si desea realizar otra transacción. Si la contestación es Si, lo devolverá al Menú de opciones. Si la contestación es No, preguntará si desea un recibo impreso. Si la contestación es Si, imprimirá un recibo de la transacción y cerrará los archivos y terminará el programa. Si la contestación es No cerrará los archivos y terminará el programa.
+
+
+
+
+
+
+
+
+
