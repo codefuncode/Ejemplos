@@ -1,4 +1,4 @@
-<div class="seccion_reguistro all">
+<div class="registro_clinte all">
   <div class="">
     <div class="">
       <div class="">

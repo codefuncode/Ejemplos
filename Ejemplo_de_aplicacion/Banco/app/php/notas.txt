@@ -1,0 +1,13 @@
+if (isset($_POST['nombre_pais']) && $_POST["nombre_pais"] != "") {
+    $respuesta = array(
+        "respuesta" => "si");
+
+    echo json_encode($respuesta);
+
+} else {
+    $respuesta = array(
+        "respuesta" => "no");
+
+    echo json_encode($respuesta);
+}
+

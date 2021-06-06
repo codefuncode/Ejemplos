@@ -1,0 +1,1 @@
+Realizando mi lectura de  rutina  en temas aleatorios encuentro esto relacionado con el objeto Window de JavaScript. Específicamente cuando estoy  consultando Window.statusbar

@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -11,12 +13,10 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
     <link href="css/colors.css" rel="stylesheet" type="text/css"/>
     <link href="css/css.css" rel="stylesheet"/>
-    <style>
-      html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
-    </style>
+    <script src="js/jquery-3.6.0.min.js" type="text/javascript">
+    </script>
   </head>
   <body class="w3-light-grey">
-    <!-- Top container -->
     <div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
       <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();">
         <i class="fa fa-bars">

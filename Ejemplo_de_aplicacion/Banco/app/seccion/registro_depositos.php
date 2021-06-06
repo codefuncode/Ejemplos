@@ -1,4 +1,4 @@
-<div class="seccion_reguistro all">
+<div class="seccion_depositos all">
   <div class="">
     <div class="">
       <div class="">

@@ -1,0 +1,106 @@
+Obtener API
+
+La API Fetch proporciona una interfaz para buscar recursos (incluso a través de la red). A cualquiera que haya utilizado XMLHttpRequest le resultará familiar, pero la nueva API proporciona un conjunto de funciones más potente y flexible.
+
+Conceptos y uso
+
+Fetch proporciona una definición genérica de los objetos de solicitud y respuesta (y otras cosas relacionadas con las solicitudes de red). Esto permitirá que se usen donde sea necesario en el futuro, ya sea para trabajadores de servicio, API de caché y otras cosas similares que manejan o modifican solicitudes y respuestas, o cualquier tipo de caso de uso que pueda requerir que genere sus respuestas. programáticamente (es decir, el uso de un programa de computadora o instrucciones de programación personal).
+
+También define conceptos relacionados como CORS y la semántica del encabezado HTTP Origin, reemplazando sus definiciones separadas en otros lugares.
+
+Para realizar una solicitud y obtener un recurso, use el método WindowOrWorkerGlobalScope.fetch (). Está implementado en múltiples interfaces, específicamente Window y WorkerGlobalScope. Esto lo hace disponible en prácticamente cualquier contexto en el que desee obtener recursos.
+
+El método fetch () toma un argumento obligatorio, la ruta al recurso que desea obtener. Devuelve una Promesa que se resuelve en la Respuesta a esa solicitud, tan pronto como el servidor responde con encabezados, incluso si la respuesta del servidor es un estado de error HTTP. También puede pasar opcionalmente un objeto de opciones de inicio como segundo argumento (consulte Solicitud).
+
+Una vez que se recupera una Respuesta, hay varios métodos disponibles para definir cuál es el contenido del cuerpo y cómo debe manejarse (ver Cuerpo).
+
+Puede crear una solicitud y una respuesta directamente utilizando los constructores Request () y Response (), pero es poco común hacerlo directamente. En cambio, es más probable que se creen como resultado de otras acciones de la API (por ejemplo, FetchEvent.respondWith () de los trabajadores del servicio).
+
+
+Abortar una búsqueda
+
+Los navegadores han comenzado a agregar soporte experimental para las interfaces AbortController y AbortSignal (también conocida como The Abort API), que permiten abortar operaciones como Fetch y XHR si aún no se han completado. Consulte las páginas de la interfaz para obtener más detalles.
+
+
+WindowOrWorkerGlobalScope
+
+
+
+WindowOrWorkerGlobalScope.fetch ()
+
+El método fetch () del mixin WindowOrWorkerGlobalScope inicia el proceso de obtener un recurso de la red, devolviendo una promesa que se cumple una vez que la respuesta está disponible. La promesa se resuelve en el objeto Respuesta que representa la respuesta a su solicitud. La promesa no rechaza los errores HTTP, solo rechaza los errores de red. Debe utilizar los controladores para comprobar si hay errores HTTP.
+
+WindowOrWorkerGlobalScope es implementado por Window y WorkerGlobalScope, lo que significa que el método fetch () está disponible en prácticamente cualquier contexto en el que desee obtener recursos.
+
+Una promesa fetch () solo se rechaza cuando se encuentra un error de red (que suele ser cuando hay un problema de permisos o similar). Una promesa fetch () no rechaza los errores HTTP (404, etc.). En su lugar, un controlador then () debe comprobar las propiedades Response.ok y / o Response.status.
+
+El método fetch () está controlado por la directiva connect-src de la Política de seguridad de contenido en lugar de la directiva de los recursos que está recuperando.
+
+Nota: Los parámetros del método fetch () son idénticos a los del constructor Request ().
+
+https://javascript.info/fetch
+Parámetros
+
+recurso
+Esto define el recurso que desea recuperar. Esto puede ser:
+
+Una cadena o cualquier otro objeto con un identificador de cadenas, incluido un objeto URL, que proporciona la URL del recurso que desea obtener.
+Un objeto de solicitud.
+
+init Opcional
+
+Un objeto que contiene cualquier configuración personalizada que desee aplicar a la solicitud. Las posibles opciones son:
+
+método
+El método de solicitud, por ejemplo, GET, POST. Tenga en cuenta que el encabezado de origen no se establece en las solicitudes de recuperación con un método de HEAD o GET.
+(Este comportamiento se corrigió en Firefox 65; consulte el error 1508661).
+encabezados
+Cualquier encabezado que desee agregar a su solicitud, contenido dentro de un objeto Encabezados o un objeto literal con valores ByteString. Tenga en cuenta que algunos nombres están prohibidos.
+cuerpo
+Cualquier cuerpo que desee agregar a su solicitud: puede ser un objeto Blob, BufferSource, FormData, URLSearchParams, USVString o ReadableStream. Tenga en cuenta que una solicitud que utilice el método GET o HEAD no puede tener cuerpo.
+modo
+El modo que desea usar para la solicitud, por ejemplo, cors, no-cors o same-origin.
+cartas credenciales
+
+Controla lo que hacen los navegadores con las credenciales (cookies, entradas de autenticación HTTP y certificados de cliente TLS). Debe ser una de las siguientes cadenas:
+
+omitir
+Le dice a los navegadores que excluyan las credenciales de la solicitud e ignoren cualquier credencial enviada en la respuesta (por ejemplo, cualquier encabezado Set-Cookie).
+mismo origen
+Indica a los navegadores que incluyan credenciales con solicitudes a URL del mismo origen y que utilicen cualquier credencial enviada en las respuestas de URL del mismo origen.
+incluir
+Indica a los navegadores que incluyan credenciales tanto en solicitudes del mismo origen como en las de origen cruzado, y que siempre utilicen las credenciales enviadas en las respuestas.
+Nota
+
+Las credenciales pueden incluirse en solicitudes de origen cruzado simples y 'finales', pero no deben incluirse en las solicitudes de verificación previa de CORS.
+
+cache
+Una cadena que indica cómo interactuará la solicitud con la caché HTTP del navegador. Los valores posibles, predeterminado, sin almacenar, recargar, sin caché, forzar caché y solo si se almacenan en caché, se documentan en el artículo para la propiedad de caché del objeto Request.
+redireccionar
+Cómo manejar una respuesta de redireccionamiento:
+
+seguir: sigue automáticamente las redirecciones. A menos que se indique lo contrario, el modo de redireccionamiento está configurado para seguir
+error: se cancela con un error si se produce una redirección.
+manual: la persona que llama tiene la intención de procesar la respuesta en otro contexto.
+Consulte el estándar de búsqueda WHATWG para obtener más información.
+
+referente
+Un USVString que especifica el referente de la solicitud. Puede ser una URL del mismo origen, about: client o una cadena vacía.
+referrerPolicy
+Especifica la política de referencia que se utilizará para la solicitud. Puede ser sin referencia, sin referencia cuando se rebaja, mismo origen, origen, origen-estricto, origen-cuando-origen-cruzado, origen-estricto-cuando-origen-cruzado o URL insegura.
+integridad
+Contiene el valor de integridad del recurso secundario de la solicitud (por ejemplo, sha256-BpfBw7ivV8q2jLiT13fxDYAe2tJllusRSZ273h2nFSE =).
+mantener viva
+La opción keepalive se puede utilizar para permitir que la solicitud sobreviva a la página. Obtener con el indicador keepalive es un reemplazo de la API Navigator.sendBeacon ().
+señal
+Una instancia de objeto AbortSignal; le permite comunicarse con una solicitud de recuperación y abortarla si lo desea a través de un AbortController.
+
+Valor devuelto
+
+Una promesa que se resuelve en un objeto de respuesta.
+Excepciones
+
+AbortError
+La solicitud fue cancelada debido a una llamada al método abort () de AbortController.
+Error de tecleado
+La cadena de URL especificada incluye las credenciales de usuario. En su lugar, esta información debe proporcionarse mediante un encabezado de autorización.
