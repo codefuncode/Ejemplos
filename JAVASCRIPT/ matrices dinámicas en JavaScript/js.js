@@ -12,6 +12,7 @@ function ejemplo1(argument) {
 }
 
 function ejemplo2(argument) {
+
     let mynumber = parseInt(argument);
     let arr = new Array(mynumber);
 

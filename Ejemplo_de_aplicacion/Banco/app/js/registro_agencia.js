@@ -1,1 +1,3 @@
-registro_agencia.js
+function registro_agencia(argument) {
+	console.log("ok");
+}

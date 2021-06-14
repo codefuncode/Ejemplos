@@ -7,7 +7,8 @@ CREATE TABLE cliente(
     apellido_cliente VARCHAR(10) NOT NULL,
     telefono_cliente INT(9) NOT NULL,
     fecha_nacimiento DATE NOT NULL,
-    id_pueblo DATE NOT NULL,
+    id_pueblo INT NOT NULL,
+    id_pais INT NOT NULL,
     direccion VARCHAR(30) NOT NULL,
     edad_cliente INT(2) NOT NULL,
     sexo_cliente VARCHAR(10) NOT NULL,
@@ -38,20 +39,20 @@ CREATE TABLE agegencia(
 
 CREATE TABLE pueblo(
     id_pueblo INT NOT NULL AUTO_INCREMENT,
-    nombre_pueblo INT NOT NULL
+    nombre_pueblo VARCHAR(20) NOT NULL,
     PRIMARY KEY (id_pueblo)
     );
 
 CREATE TABLE pais(
     id_pais INT NOT NULL AUTO_INCREMENT,
-    nombre_pais INT NOT NULL
+    nombre_pais VARCHAR(20) NOT NULL,
     PRIMARY KEY (id_pais)
     );
 
 CREATE TABLE inicio_sesion(
     id_inicio_sesion INT NOT NULL AUTO_INCREMENT,
     id_cliente INT NOT NULL,
-    fecha_inicio_sesion INT NOT NULL
+    fecha_inicio_sesion INT NOT NULL,
     PRIMARY KEY (id_inicio_sesion)
     );
 
@@ -59,7 +60,7 @@ CREATE TABLE registro_clinete(
     id_registro_clinete INT NOT NULL AUTO_INCREMENT,
     id_cliente INT NOT NULL,
     tipo_registro_clinete VARCHAR(10) NOT NULL,
-    fecha_registro_clinete INT NOT NULL
+    fecha_registro_clinete INT NOT NULL,
     PRIMARY KEY (id_registro_clinete)
     );
 
@@ -68,13 +69,13 @@ CREATE TABLE targeta_debito(
     id_cliente INT NOT NULL,
     codigo_targeta VARCHAR(10) NOT NULL,
     id_estado_targeta INT NOT NULL,
-    estado_targeta VARCHAR(10) NOT NULL
+    estado_targeta VARCHAR(10) NOT NULL,
     PRIMARY KEY (id_targeta_debito)
     );
 
 CREATE TABLE estado_targeta(
     id_estado_targeta INT NOT NULL AUTO_INCREMENT,
-    estado_targeta VARCHAR(10) NOT NULL
+    estado_targeta VARCHAR(10) NOT NULL,
     PRIMARY KEY (id_estado_targeta)
     );
 
