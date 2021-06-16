@@ -14,15 +14,15 @@
               <p>
                 Seleccione el pais
               </p>
-              <select class="w3-select" name="seleccion_pais">
+              <select class="w3-select .seleccion_pais" name="seleccion_pais">
               </select>
               <p>
                 <label class="w3-text-blue">
                   <b>
-                    Nombre del pueblo
+                    Nombre del pais
                   </b>
                 </label>
-                <input class="w3-input w3-border" name="nombre_pueblo" type="text"/>
+                <input class="w3-input w3-border nombre_pueblo" name="nombre_pueblo" type="text"/>
               </p>
               <p>
                 <button class="w3-button w3-light-green btn_registrar_pueblo">
@@ -34,7 +34,7 @@
               <p>
               </p>
             </div>
-            <div class="w3-col" style="width:45%">
+       <!--      <div class="w3-col" style="width:45%">
               <div class="w3-container">
                 <h2>
                   Registro de Pueblos
@@ -270,7 +270,7 @@
                   </tbody>
                 </table>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>

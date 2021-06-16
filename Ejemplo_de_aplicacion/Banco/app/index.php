@@ -27,8 +27,8 @@
 		<?php include_once "comp/nav.html";?>
 		<div class="w3-main cuerpo" style="margin-left:300px;margin-top:43px; display: none;">
 			<?php include_once "comp/header.html";?>
-			<?php include_once 'comp/menu_interno.html';?>
-			<?php include_once 'seccion_registro/registros.php';?>
+
+			<?php include_once 'cuerpo/cuerpo.php';?>
 			<?php include_once "comp/chat.html";?>
 		</div>
 		<?php include_once 'comp/sript.html';?>
